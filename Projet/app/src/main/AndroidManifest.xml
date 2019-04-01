@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.a533.cours5_Jp">
-
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,6 +19,7 @@
         <activity android:name="com.example.a533.cours5_Jp.SignUpOrLoginActivity" />
         <activity android:name="com.example.a533.cours5_Jp.LoginActivity" />
         <activity android:name="com.example.a533.cours5_Jp.SignUpActivity"></activity>
+        <service android:name=".notification.NotificationService"/>
     </application>
 
 </manifest>
